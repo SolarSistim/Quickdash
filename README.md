@@ -24,6 +24,9 @@ There are about 150 custom PNG "icons" included in this project.
 
 The icon library is found within the compiled project at /assets/icons.
 
+![icons](https://github.com/user-attachments/assets/b55cf680-31bc-4b8e-8eb7-ca0a4aa480ec)
+
+
 # Editing the colors & settings
 
 The configuration file "board-data.json" is found at /assets/board-data.json in the compiled app.
