@@ -107,7 +107,7 @@ Quickdash will iterate over the "links" portion of board-data.json and display t
 
 # Deployment
 
-Quickdash is an HTML/Javascript only application. That means there are no back-end technologies in use like NodeJS, PHP or APS, and all yo have to do to deploy it is to plop it into your favorite Web server's wwwroot folder (or equivalent).
+Quickdash is an HTML/Javascript only application. That means there are no back-end technologies in use like NodeJS, PHP or APS, and all you have to do to deploy it is to plop it into your favorite Web server's wwwroot folder (or equivalent).
 
 Example: 
 
