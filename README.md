@@ -4,6 +4,9 @@
 
 Quickdash is a simple Angular/JSON powered self-hosted start page.
 
+![quickdash](https://github.com/user-attachments/assets/f3f04558-42ce-4fda-abff-36d0465d4e7b)
+
+
 # Features
 
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
