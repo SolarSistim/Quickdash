@@ -62,8 +62,9 @@ The configuration file **"board-data.json"** is found at /assets/board-data.json
     }
 ```
 
-## Theme settings:
+## Settings:
 
+Color settings:
 Colors are set by CSS colors, example: "#242B33" or "black".
 
 - **background-color**: The CSS Background color of the entire app.
