@@ -100,7 +100,7 @@ Category & links settings:
 
 Quickdash will iterate over the "links" portion of board-data.json and display them in the order that they're in within the JSON file.
 
-- Name: The name of the category. This is the part that will cause a category panel to appear.
+- name: The name of the category. This is the part that will cause a category panel to appear.
 - title: The title of the link. This is what the link will apear as on the dashboard.
 - icon: The icon's filename. All icons are hosted at /assets/icons.
 - link: The link that you will navigate to when you click on it. Always opens in new tab.
