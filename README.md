@@ -4,8 +4,6 @@
 
 Quickdash is a simple Angular/JSON powered self-hosted start page.
 
-![quickdash](https://github.com/user-attachments/assets/2cb1f949-e468-45f0-84ba-a799a294fc29)
-
 # Features
 
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
@@ -24,8 +22,7 @@ There are about 150 custom PNG "icons" included in this project.
 
 The icon library is found within the compiled project at /assets/icons.
 
-![icons](https://github.com/user-attachments/assets/b55cf680-31bc-4b8e-8eb7-ca0a4aa480ec)
-
+![icons2](https://github.com/user-attachments/assets/30e8c493-b8eb-4b0f-a5cd-876fa1ce99d2)
 
 # Editing the colors & settings
 
