@@ -30,6 +30,24 @@ The configuration file "board-data.json" is found at /assets/board-data.json in 
 
 Quickdash Settings:
 
+```
+  "quickdash-settings": [
+    {
+      "theme": {
+        "background-color": "#242B33",
+        "category-background-color": "#2E3A46",
+        "category-header-color": "#303F48",
+        "category-link-color": "white"
+      },
+      "search": {
+        "enabled": true,
+        "provider": "Google",
+        "url": "https://www.google.com/search?q=",
+        "search_bar_color": "#303F48"
+      }
+    }
+```
+
 Theme settings:
 
 Colors are set by CSS colors, example: "#242B33" or "black".
@@ -45,3 +63,42 @@ Search settings:
 - provider: The name of the search provider, Example: Google, DuckDuckGo.
 - url: The url prefix for the search provider. Example: "https://www.google.com/search?q=" for Google, or "https://duckduckgo.com/?t=h_&q=" for DuckDuckGo.
 - search_bar_color: The color of the border around the search bar in CSS format.
+
+# Editing categories & links
+
+Quickdash Settings:
+
+```
+    {
+      "name": "Assets",
+      "items": [
+        {
+          "title": "Tasks",
+          "icon": "tasks.png",
+          "link": "https://tasks.google.com/"
+        },
+        {
+          "title": "Tomatoes",
+          "icon": "tomatoes.png",
+          "link": "https://www.rottentomatoes.com/"
+        },
+        {
+          "title": "Cloud Convert",
+          "icon": "cloudconvert.png",
+          "link": "https://cloudconvert.com/mobi-to-epub"
+        },
+        {
+          "title": "Github",
+          "icon": "github.png",
+          "link": "https://www.github.com"
+        }
+      ]
+    },
+```
+
+Category & links settings:
+
+- Name: The name of the category. This is the part that will cause a category panel to appear.
+- title: The title of the link. This is what the link will apear as on the dashboard.
+- icon: The icon's filename. All icons are hosted at /assets/icons.
+- link: The link that you will navigate to when you click on it. Always opens in new tab.
