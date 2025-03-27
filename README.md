@@ -24,7 +24,9 @@ Instead of going to all the effort and code necessary to select icons from an ic
 
 There are about 150 custom PNG "icons" included in this project.
 
-The icon library is found within the compiled project at /assets/icons.
+Need a new icon? Just pop your icon into /assets/icons. 
+
+Recommended icon format is PNG, and recommended dimensions are 120x120 at 300 DPI.
 
 ![icons2](https://github.com/user-attachments/assets/30e8c493-b8eb-4b0f-a5cd-876fa1ce99d2)
 
