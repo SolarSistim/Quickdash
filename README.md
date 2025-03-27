@@ -24,7 +24,7 @@ Quickdash is a simple Angular/JSON powered self-hosted start page.
 
 # Icons
 
-There are no icon libraries loaded in this project. The "icons" are just 120x120 PNG images @ 300 DPI. 
+**There are no icon libraries loaded in this project.** The "icons" are just 120x120 PNG images @ 300 DPI. 
 
 Why do this? - Because no matter HOW MANY icons libraries I load into this thing, there will ALWAYS be something missing.
 
@@ -40,9 +40,9 @@ Recommended icon format is PNG, and recommended dimensions are 120x120 at 300 DP
 
 # Editing the colors & settings
 
-The configuration file "board-data.json" is found at /assets/board-data.json in the compiled app.
+The configuration file **"board-data.json"** is found at /assets/board-data.json in the compiled app.
 
-Quickdash Settings:
+## Quickdash Settings:
 
 ```
   "quickdash-settings": [
@@ -62,25 +62,25 @@ Quickdash Settings:
     }
 ```
 
-Theme settings:
+## Theme settings:
 
 Colors are set by CSS colors, example: "#242B33" or "black".
 
-- background-color: The CSS Background color of the entire app.
-- category-background-color: The background color of each category panel in CSS format. 
-- category-header-color: The background color of each category panel header in CSS format.
-- category-link-color: The color of each category link in CSS format.
+- **background-color**: The CSS Background color of the entire app.
+- **category-background-color**: The background color of each category panel in CSS format. 
+- **category-header-color**: The background color of each category panel header in CSS format.
+- **category-link-color**: The color of each category link in CSS format.
 
 Search settings:
 
-- enabled: Boolean, enables or disables the search feature.
-- provider: The name of the search provider, Example: Google, DuckDuckGo.
-- url: The url prefix for the search provider. Example: "https://www.google.com/search?q=" for Google, or "https://duckduckgo.com/?t=h_&q=" for DuckDuckGo.
-- search_bar_color: The color of the border around the search bar in CSS format.
+- **enabled**: Boolean, enables or disables the search feature.
+- **provider**: The name of the search provider, Example: Google, DuckDuckGo.
+- **url**: The url prefix for the search provider. Example: "https://www.google.com/search?q=" for Google, or "https://duckduckgo.com/?t=h_&q=" for DuckDuckGo.
+- **search_bar_color**: The color of the border around the search bar in CSS format.
 
 # Editing categories & links
 
-Quickdash Settings:
+## Quickdash Settings:
 
 ```
     {
@@ -110,14 +110,14 @@ Quickdash Settings:
     },
 ```
 
-Category & links settings:
+## Category & links settings:
 
 Quickdash will iterate over the "links" portion of board-data.json and display them in the order that they're in within the JSON file.
 
-- name: The name of the category. This is the part that will cause a category panel to appear.
-- title: The title of the link. This is what the link will apear as on the dashboard.
-- icon: The icon's filename. All icons are hosted at /assets/icons.
-- link: The link that you will navigate to when you click on it. Always opens in new tab.
+- **name**: The name of the category. This is the part that will cause a category panel to appear.
+- **title**: The title of the link. This is what the link will apear as on the dashboard.
+- **icon**: The icon's filename. All icons are hosted at /assets/icons.
+- **link**: The link that you will navigate to when you click on it. Always opens in new tab.
 
 # The entire quickdash JSON configuration file
 
@@ -570,9 +570,9 @@ Quickdash is an HTML/Javascript only application. That means there are no back-e
 
 Example: 
 
-- Nginx: /var/www/html/Quickdash\
-- IIS: \wwwroot\Quickdash\
-- Apache: /var/www/html/Quickdash/
+- **Nginx**: /var/www/html/Quickdash\
+- **IIS**: \wwwroot\Quickdash\
+- **Apache**: /var/www/html/Quickdash/
 
 # Download
 
