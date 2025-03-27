@@ -98,7 +98,19 @@ Quickdash Settings:
 
 Category & links settings:
 
+Quickdash will iterate over the "links" portion of board-data.json and display them in the order that they're in within the JSON file.
+
 - Name: The name of the category. This is the part that will cause a category panel to appear.
 - title: The title of the link. This is what the link will apear as on the dashboard.
 - icon: The icon's filename. All icons are hosted at /assets/icons.
 - link: The link that you will navigate to when you click on it. Always opens in new tab.
+
+# Deployment
+
+Quickdash is an HTML/Javascript only application. That means there are no back-end technologies in use like NodeJS, PHP or APS, and all yo have to do to deploy it is to plop it into your favorite Web server's wwwroot folder (or equivalent).
+
+Example: 
+
+- Nginx: /var/www/html/Quickdash\
+- IIS: \wwwroot\Quickdash\
+- Apache: /var/www/html/Quickdash/
