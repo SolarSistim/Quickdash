@@ -16,6 +16,12 @@ Quickdash is a simple Angular/JSON powered self-hosted start page.
 - PNG icons (No icon library is loaded)
 - Front-end app only: No back-end server required; just pop it onto your favorite webserver.
 
+# Technologies used
+
+- Angular CLI 18.0.4
+- Angular Material 18.2.14
+- NG Bootstrap 5.3.3
+
 # Icons
 
 There are no icon libraries loaded in this project. The "icons" are just 120x120 PNG images @ 300 DPI. 
