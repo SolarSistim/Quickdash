@@ -19,7 +19,6 @@
           </mat-card>
         </form>
   
-        <!-- Autocomplete dropdown for search query -->
         <mat-autocomplete #autoSearch="matAutocomplete" (optionSelected)="onOptionSelected($event)">
           <mat-optgroup *ngIf="searchQuery.length != 0">
             <mat-label>Search</mat-label>

@@ -58,12 +58,10 @@ export class SearchComponent implements OnInit {
         this.searchBarColor = settings.search['search_bar_color'];
       }
 
-      // Load links from the board data
       this.links = this.boardData?.links?.flatMap((category: any) => category.items) || [];
       this.filteredLinks = this.links;
     });
 
-    // Setup observable for autocomplete filtering
     this.myControl.valueChanges.pipe(
       startWith(''),
       map((value) => this._filter(value || ''))
@@ -84,7 +82,7 @@ export class SearchComponent implements OnInit {
 
   generateSearchUrl(query: string): string {
     if (!query) {
-      return '';  // or handle it in another way
+      return '';
     }
     const searchTerms = query.split(' ').join('+');
     return `${this.searchUrl}${searchTerms}`;
@@ -108,22 +106,20 @@ export class SearchComponent implements OnInit {
     this.resetSearch();
   }
 
-  // Handle navigation to search result
   navigateToSearch(query: string): void {
     const url = this.generateSearchUrl(query);
     window.open(url, '_blank');
   }
 
   onLinkClick(link: string): void {
-    console.log('Attempting to open the link:', link);  // Debugging
+    console.log('Attempting to open the link:', link);
     if (link && link.trim() !== '') {
       window.open(link, '_blank');
     } else {
-      console.warn('Attempted to open an invalid or empty link:', link);  // Warning for empty link
+      console.warn('Attempted to open an invalid or empty link:', link);
     }
   }
 
-  // Filter the links based on user input
   filterLinks(query: string): void {
     if (query.length > 0) {
       this.filteredLinks = this.links.filter((link) =>
@@ -135,7 +131,6 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  // Clear the filter and reset input
   clearFilter(input: HTMLInputElement) {
     input.value = '';
     this.searchQuery = '';
@@ -145,8 +140,8 @@ export class SearchComponent implements OnInit {
 
   resetSearch() {
     this.searchQuery = '';
-    this.filteredLinks = this.links; // Reset the links to their initial state
-    this.searchSuggestions = []; // Clear search suggestions
-    this.myControl.setValue(''); // Reset the form control value
+    this.filteredLinks = this.links;
+    this.searchSuggestions = [];
+    this.myControl.setValue('');
   }
 }

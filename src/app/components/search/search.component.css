@@ -6,12 +6,10 @@
     cursor: pointer;
 }
 
-/* Ensure the dropdown is full width */
 .input-group .dropdown-menu {
     width: 100%;
   }
   
-  /* Styling for the dropdown items */
   .dropdown-item {
     cursor: pointer;
     padding: 10px;

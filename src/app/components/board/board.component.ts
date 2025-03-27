@@ -26,7 +26,6 @@ export class BoardComponent implements OnInit {
       this.boardData = data;
       console.log(this.boardData);
 
-      // Extract the color values from the quickdash-settings
       const settings = this.boardData?.['quickdash-settings']?.[0];
       if (settings && settings.theme) {
         this.categoryHeaderColor = settings.theme['category-header-color'];

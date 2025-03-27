@@ -1,6 +1,6 @@
 .quickdash-container {
-    height: 100vh; /* 100% of the viewport height */
-    width: 100%; /* 100% of the available width */
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
