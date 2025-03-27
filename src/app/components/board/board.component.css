@@ -1,0 +1,50 @@
+
+  .link-item {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    font-weight: 100;
+  }
+  
+  .link-item:hover {
+    text-decoration: underline;
+    color: white;
+    transform: translateX(10px);
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .card {
+    background-color: #2E3A46;
+    border: none;
+  }
+  
+  .card-header {
+    background-color: #303F48;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+  }
+  
+  .card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  ul {
+    padding-left: 10px !important;
+  }
+  
+  .card-body {
+    color: white;
+    padding: 8px;
+  }
+  
