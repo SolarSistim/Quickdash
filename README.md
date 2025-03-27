@@ -5,7 +5,7 @@
 Quickdash is a simple Angular/JSON powered self-hosted start page.
 
 - Download: https://github.com/SolarSistim/Quickdash/releases/tag/v1.0.0-release
-- Unzip Quickdash_v1.0.0.zip into your favorite web server.
+- Unzip Quickdash_v1.0.0.zip into your favorite web server's srv/wwwroot folder.
 
 ![quickdash](https://github.com/user-attachments/assets/f3f04558-42ce-4fda-abff-36d0465d4e7b)
 
