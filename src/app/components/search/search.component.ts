@@ -53,9 +53,9 @@ export class SearchComponent implements OnInit {
       this.boardData = data;
       const settings = this.boardData?.['quickdash-settings']?.[0];
       if (settings) {
-        this.searchProvider = settings.search['search_provider'];
-        this.searchUrl = settings.search['search_url'];
-        this.searchBarColor = settings.search['search_bar_color'];
+        this.searchProvider = settings.search.provider;
+        this.searchUrl = settings.search.url;
+        this.searchBarColor = settings.search.search_bar_color;
       }
 
       this.links = this.boardData?.links?.flatMap((category: any) => category.items) || [];
