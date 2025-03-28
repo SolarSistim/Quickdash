@@ -14,7 +14,7 @@
                 [matAutocomplete]="autoSearch"
                 #input
               />
-              <mat-icon matSuffix class="filterClear" (click)="resetSearch();">clear</mat-icon>
+              <mat-icon matSuffix class="filterClear" (click)="resetSearch(); clearFilter(input);" style="z-index: 9999;">clear</mat-icon>
             </mat-form-field>
           </mat-card>
         </form>
@@ -36,7 +36,7 @@
             <mat-option
               *ngFor="let link of filteredLinks"
               [value]="link.link"
-              (click)="onLinkClick(link.link); resetSearch();"
+              (click)="onLinkClick(link.link); resetSearch(); clearFilter(input);"
               (keydown.enter)="onLinkClick(link.link); resetSearch();"
             >
               <img [src]="'/assets/icons/' + link.icon" alt="{{ link.title }}" class="icon custom-icon" style="position: relative; top: -2px;"/>
