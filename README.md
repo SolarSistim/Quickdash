@@ -586,3 +586,9 @@ Example:
 # Download
 
 - https://github.com/SolarSistim/Quickdash/releases/tag/v1.0.0-release
+
+# Roadmap
+
+- Create option to add tabs
+- Add background image option
+- Add trianglify as background option
