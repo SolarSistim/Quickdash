@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-12">
+      <div class="input-group">
+        <form class="w-100">
+          <mat-card class="p-3 mb-3 w-100" [ngStyle]="{'background-color': searchBarColor}">
+            <mat-form-field class="w-100">
+              <mat-label>Search with {{ this.searchProvider }}</mat-label>
+              <input
+                matInput
+                placeholder="Start typing to search."
+                [(ngModel)]="searchQuery"
+                [ngModelOptions]="{ standalone: true }"
+                (input)="updateSearchSuggestions(searchQuery); filterLinks(searchQuery);"
+                [matAutocomplete]="autoSearch"
+                #input
+              />
+              <mat-icon matSuffix class="filterClear" (click)="resetSearch();">clear</mat-icon>
+            </mat-form-field>
+          </mat-card>
+        </form>
+  
+        <mat-autocomplete #autoSearch="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+          <mat-optgroup *ngIf="searchQuery.length != 0">
+            <mat-label>Search</mat-label>
+            <mat-option
+              *ngIf="searchQuery.length > 0"
+              [value]="generateSearchQuery(searchQuery)"
+              (click)="navigateToSearch(searchQuery); resetSearch();"
+            >
+              Search {{ searchProvider }} for "{{ searchQuery }}"
+            </mat-option>
+          </mat-optgroup>
+
+          <mat-optgroup *ngIf="filteredLinks && filteredLinks.length > 0">
+            <mat-label>Quickdash Links</mat-label>
+            <mat-option
+              *ngFor="let link of filteredLinks"
+              [value]="link.link"
+              (click)="onLinkClick(link.link); resetSearch();"
+              (keydown.enter)="onLinkClick(link.link); resetSearch();"
+            >
+              <img [src]="'/assets/icons/' + link.icon" alt="{{ link.title }}" class="icon custom-icon" style="position: relative; top: -2px;"/>
+              {{ link.title }}
+            </mat-option>
+          </mat-optgroup>
+
+        </mat-autocomplete>
+      </div>
+    </div>
+  </div>

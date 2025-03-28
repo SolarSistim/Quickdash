@@ -1,0 +1,27 @@
+<div class="container my-4" *ngIf="enableSearch">
+  <app-search></app-search>
+</div>
+
+<div class="container my-4">
+  <div class="row g-3">
+    <div *ngFor="let category of boardData?.links" class="col-12 col-lg-2">
+      <div class="card">
+        
+        <div class="card-header" [ngStyle]="{'background-color': categoryHeaderColor}">
+          {{ category.category || category.name }}
+        </div>
+
+        <div class="card-body" [ngStyle]="{'background-color': categoryBackgroundColor}">
+          <ul>
+            <li *ngFor="let item of category.items">
+              <a [href]="item.link" class="link-item" target="_blank" [ngStyle]="{'color': categoryLinkColor}">
+                <img [src]="'/assets/icons/' + item.icon" alt="{{ item.title }} icon" class="icon">
+                {{ item.title }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
