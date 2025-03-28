@@ -15,6 +15,8 @@ For starters, I don't like configuring YAML files. Something about the tab-delin
 
 Also, I've found that other start-page repos have either too few options, or too many. I wanted something in-between, where I can see 50+ links on the screen at the same time, but that I didn't have to wade through a bunch of documentation to figure out.
 
+I'm also using this project as a springboard to learn how to create Docker containers.
+
 # Features
 
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
