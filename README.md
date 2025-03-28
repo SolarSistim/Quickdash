@@ -9,6 +9,12 @@ Quickdash is a simple Angular/JSON powered self-hosted start page.
 
 ![quickdash](https://github.com/user-attachments/assets/f3f04558-42ce-4fda-abff-36d0465d4e7b)
 
+# Why does this exist?
+
+For starters, I don't like configuring YAML files. Something about the tab-delineation just doesn't jibe with me, and I fond JSON to be much easier to work with. 
+
+Also, I've found that other start-page repos have either too few options, or too many. I wanted something in-between, where I can see 50+ links on the screen at the same time, but that I didn't have to ade through a bunch of documentation to figure out.
+
 # Features
 
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
