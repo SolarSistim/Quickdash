@@ -207,7 +207,7 @@ Quickdash will iterate over the "links" portion of board-data.json and display t
         {
           "title": "Discord",
           "icon": "discord.png",
-          "link": "https://discord.com/channels/@me/947158726727585792"
+          "link": "https://discord.com"
         },
         {
           "title": "Facebook",
