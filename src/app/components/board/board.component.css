@@ -48,3 +48,34 @@
     padding: 8px;
   }
   
+  .nav-tabs .nav-link {
+    color: white;
+    background-color: transparent;
+    border-color: transparent transparent #dee2e6;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+  }
+
+  .card {
+    min-height: 100%;
+  }
+
+  ::ng-deep .mat-mdc-tab-body-content {
+    overflow: hidden !important;
+  }
+
+  ::ng-deep .mdc-tab__text-label {
+    color: white !important;
+  }
+
+  ::ng-deep .mat-mdc-tab-header-pagination {
+    background-color: #303F48;
+  }

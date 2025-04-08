@@ -31,16 +31,6 @@
               "title": "X",
               "icon": "x.png",
               "link": "https://www.x.com/"
-            },
-            {
-              "title": "Threads",
-              "icon": "threads.png",
-              "link": "https://www.threads.com/"
-            },
-            {
-              "title": "Bluesky",
-              "icon": "bluesky.png",
-              "link": "https://www.bluesky.com/"
             }
           ]
         },
@@ -56,26 +46,6 @@
               "title": "Tumblr",
               "icon": "tumblr.png",
               "link": "https://www.tumblr.com/"
-            },
-            {
-              "title": "Pixabay",
-              "icon": "pixabay.png",
-              "link": "https://www.pixabay.com/"
-            },
-            {
-              "title": "Flickr",
-              "icon": "flickr.png",
-              "link": "https://www.flickr.com/"
-            },
-            {
-              "title": "Imgur",
-              "icon": "imgur.png",
-              "link": "https://www.imgur.com/"
-            },
-            {
-              "title": "Photobucket",
-              "icon": "photobucket.png",
-              "link": "https://www.photobucket.com/"
             }
           ]
         },
@@ -91,21 +61,6 @@
               "title": "Youtube",
               "icon": "youtube.png",
               "link": "https://www.youtube.com/"
-            },
-            {
-              "title": "IGTV",
-              "icon": "igtv.png",
-              "link": "https://www.igtv.com/"
-            },
-            {
-              "title": "Daily Motion",
-              "icon": "daily_motion.png",
-              "link": "https://www.dailymotion.com/"
-            },
-            {
-              "title": "Twitch",
-              "icon": "twitch.png",
-              "link": "https://www.twitch.tv/"
             }
           ]
         },
@@ -116,11 +71,6 @@
               "title": "Reddit",
               "icon": "reddit.png",
               "link": "https://www.reddit.com/"
-            },
-            {
-              "title": "Quora",
-              "icon": "quora.png",
-              "link": "https://www.quora.com/"
             }
           ]
         },
@@ -141,21 +91,6 @@
               "title": "Discord",
               "icon": "discord.png",
               "link": "https://discord.com/"
-            },
-            {
-              "title": "Mumble",
-              "icon": "mumble.png",
-              "link": "https://mumble.com/"
-            },
-            {
-              "title": "Telegram",
-              "icon": "telegram.png",
-              "link": "https://www.telegram.com/"
-            },
-            {
-              "title": "Ventrillo",
-              "icon": "ventrillo.png",
-              "link": "https://www.ventrillo.com/"
             }
           ]
         },
@@ -166,26 +101,6 @@
               "title": "LinkedIn",
               "icon": "linkedin.png",
               "link": "https://www.linkedin.com/"
-            },
-            {
-              "title": "Freelancer",
-              "icon": "freelancer.png",
-              "link": "https://www.freelancer.com/"
-            },
-            {
-              "title": "Upwork",
-              "icon": "upwork.png",
-              "link": "https://www.upwork.com/"
-            },
-            {
-              "title": "Fiverr",
-              "icon": "fiverr.png",
-              "link": "https://www.fiverr.com/"
-            },
-            {
-              "title": "Guru",
-              "icon": "guru.png",
-              "link": "https://www.guru.com/"
             }
           ]
         }
@@ -400,16 +315,6 @@
               "title": "Pennymac",
               "icon": "pennymac.png",
               "link": "https://www.pennymac.com/"
-            },
-            {
-              "title": "Fairway Mortgage",
-              "icon": "fairway_mortgage.png",
-              "link": "https://www.fairwaymortgage.com/"
-            },
-            {
-              "title": "Rocket Mortgage",
-              "icon": "rocket_mortgage.png",
-              "link": "https://www.rocketmortgage.com/"
             }
           ]
         }
@@ -660,11 +565,6 @@
               "title": "Copilot",
               "icon": "copilot.png",
               "link": "https://github.com/features/copilot"
-            },
-            {
-              "title": "Gemini",
-              "icon": "gemini.png",
-              "link": "https://www.gemini.com"
             }
           ]
         },
@@ -680,16 +580,6 @@
               "title": "Github",
               "icon": "github.png",
               "link": "https://github.com/"
-            },
-            {
-              "title": "Bitbucket",
-              "icon": "bitbucket.png",
-              "link": "https://bitbucket.com/"
-            },
-            {
-              "title": "Sourceforge",
-              "icon": "sourceforge.png",
-              "link": "https://sourceforge.com/"
             }
           ]
         },
@@ -845,21 +735,6 @@
               "title": "Gmail",
               "icon": "gmail.png",
               "link": "https://mail.google.com/"
-            },
-            {
-              "title": "Outlook.com",
-              "icon": "outlook.png",
-              "link": "https://www.outlook.com/"
-            },
-            {
-              "title": "Yahoo",
-              "icon": "yahoo_mail.png",
-              "link": "https://www.yahoo.com/"
-            },
-            {
-              "title": "Proton Mail",
-              "icon": "proton_mail.png",
-              "link": "https://www.protonmail.com/"
             }
           ]
         },
@@ -1030,6 +905,36 @@
               "title": "Pluto TV",
               "icon": "pluto_tv.png",
               "link": "https://pluto.tv/"
+            }
+          ]
+        },
+        {
+          "name": "Streaming 3",
+          "items": [
+            {
+              "title": "Freevee",
+              "icon": "freevee.png",
+              "link": "https://www.amazon.com/freevee"
+            },
+            {
+              "title": "Starz",
+              "icon": "starz.png",
+              "link": "https://www.starz.com/"
+            },
+            {
+              "title": "Tubi",
+              "icon": "tubi.png",
+              "link": "https://tubitv.com/"
+            },
+            {
+              "title": "Crackle",
+              "icon": "crackle.png",
+              "link": "https://www.crackle.com/"
+            },
+            {
+              "title": "Fubo",
+              "icon": "fubo.png",
+              "link": "https://www.fubo.tv/"
             }
           ]
         },

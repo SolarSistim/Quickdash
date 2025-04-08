@@ -31,7 +31,7 @@
             </mat-option>
           </mat-optgroup>
 
-          <mat-optgroup *ngIf="filteredLinks && filteredLinks.length > 0">
+          <mat-optgroup *ngIf="filteredLinks.length > 0">
             <mat-label>Quickdash Links</mat-label>
             <mat-option
               *ngFor="let link of filteredLinks"
@@ -39,7 +39,7 @@
               (click)="onLinkClick(link.link); resetSearch(); clearFilter(input);"
               (keydown.enter)="onLinkClick(link.link); resetSearch();"
             >
-              <img [src]="'/assets/icons/' + link.icon" alt="{{ link.title }}" class="icon custom-icon" style="position: relative; top: -2px;"/>
+              <img [src]="'/assets/icons/' + link.icon" alt="{{ link.title }}" class="icon custom-icon" />
               {{ link.title }}
             </mat-option>
           </mat-optgroup>
