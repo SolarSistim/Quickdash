@@ -1,27 +1,72 @@
+<!-- Search Bar -->
 <div class="container my-4" *ngIf="enableSearch">
   <app-search></app-search>
 </div>
 
 <div class="container my-4">
-  <div class="row g-3">
-    <div *ngFor="let category of boardData?.links" class="col-12 col-lg-2">
-      <div class="card">
-        
-        <div class="card-header" [ngStyle]="{'background-color': categoryHeaderColor}">
-          {{ category.category || category.name }}
+  <!-- Multiple Tabs: Use Angular Material Tab Group -->
+  <mat-tab-group *ngIf="tabs.length > 1">
+    <mat-tab *ngFor="let tab of tabs" [label]="tab.name">
+      <div class="row g-3 mt-3">
+        <div *ngFor="let category of tab.categories" class="col-12 col-lg-2">
+          <div class="card">
+            <div class="card-header" [ngStyle]="{ 'background-color': categoryHeaderColor }">
+              {{ category.category || category.name }}
+            </div>
+            <div class="card-body" [ngStyle]="{ 'background-color': categoryBackgroundColor }">
+              <ul>
+                <li *ngFor="let item of category.items">
+                  <a
+                    [href]="item.link"
+                    class="link-item"
+                    target="_blank"
+                    [ngStyle]="{ color: categoryLinkColor }"
+                  >
+                    <img
+                      [src]="'/assets/icons/' + item.icon"
+                      alt="{{ item.title }} icon"
+                      class="icon"
+                    />
+                    {{ item.title }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
 
-        <div class="card-body" [ngStyle]="{'background-color': categoryBackgroundColor}">
-          <ul>
-            <li *ngFor="let item of category.items">
-              <a [href]="item.link" class="link-item" target="_blank" [ngStyle]="{'color': categoryLinkColor}">
-                <img [src]="'/assets/icons/' + item.icon" alt="{{ item.title }} icon" class="icon">
-                {{ item.title }}
-              </a>
-            </li>
-          </ul>
+  <!-- Single Tab: Skip Material Tabs, render content directly -->
+  <ng-container *ngIf="tabs.length === 1">
+    <div class="row g-3 mt-3">
+      <div *ngFor="let category of tabs[0].categories" class="col-12 col-lg-2">
+        <div class="card">
+          <div class="card-header" [ngStyle]="{ 'background-color': categoryHeaderColor }">
+            {{ category.category || category.name }}
+          </div>
+          <div class="card-body" [ngStyle]="{ 'background-color': categoryBackgroundColor }">
+            <ul>
+              <li *ngFor="let item of category.items">
+                <a
+                  [href]="item.link"
+                  class="link-item"
+                  target="_blank"
+                  [ngStyle]="{ color: categoryLinkColor }"
+                >
+                  <img
+                    [src]="'/assets/icons/' + item.icon"
+                    alt="{{ item.title }} icon"
+                    class="icon"
+                  />
+                  {{ item.title }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </ng-container>
 </div>

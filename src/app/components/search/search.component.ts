@@ -57,16 +57,31 @@ export class SearchComponent implements OnInit {
         this.searchUrl = settings.search.url;
         this.searchBarColor = settings.search.search_bar_color;
       }
-
-      this.links = this.boardData?.links?.flatMap((category: any) => category.items) || [];
+  
+      this.links = this.boardData?.tabs?.flatMap((tab: any) =>
+        tab.categories.flatMap((category: any) => category.items)
+      ) || [];
+  
+      // Start with full list
       this.filteredLinks = this.links;
+  
+      // Setup the autocomplete observable
+      this.myControl.valueChanges.pipe(
+        startWith(''),
+        map((value) => this.filterAutocomplete(value || ''))
+      ).subscribe(filtered => {
+        this.filteredLinks = filtered;
+      });
     });
-
-    this.myControl.valueChanges.pipe(
-      startWith(''),
-      map((value) => this._filter(value || ''))
+  }
+  
+  private filterAutocomplete(value: string): any[] {
+    const filterValue = value.toLowerCase();
+    return this.links.filter(link =>
+      link.title.toLowerCase().includes(filterValue)
     );
   }
+  
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
