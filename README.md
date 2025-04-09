@@ -19,6 +19,7 @@ I'm also using this project as a springboard to learn how to create Docker conta
 
 # Features
 
+- NEW Added 04-09-2025: Added Tabs in order to futher organize your links.
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
 - JSON powered links list (YAML detractors eat your heart out)
 - PNG icons (No icon library is loaded)
@@ -40,11 +41,13 @@ Instead of going to all the effort and code necessary to select icons from an ic
 
 There are about 150 custom PNG "icons" included in this project.
 
+EDIT: Added about another 50 icons on 04-09-2025. Updated icons folder screenshot.
+
 Need a new icon? Just pop your icon into /assets/icons. 
 
 Recommended icon format is PNG, and recommended dimensions are 120x120 at 300 DPI.
 
-![icons2](https://github.com/user-attachments/assets/30e8c493-b8eb-4b0f-a5cd-876fa1ce99d2)
+![icons](https://github.com/user-attachments/assets/3e95c7ec-2a71-4405-87fa-ef1e3f8a0c4c)
 
 # Editing the colors & settings
 
