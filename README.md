@@ -167,6 +167,12 @@ Quickdash will iterate over the "categories" portion of board-data.json and disp
 - **icon**: The icon's filename. All icons are hosted at /assets/icons.
 - **link**: The link that you will navigate to when you click on it. Always opens in new tab.
 
+## Upgrading from Quickdash-v1.0.1-release to Quickdash-v1.0.2-release
+
+There are no progammatic backup/restore features as of yet. The JSON config file in v1.0.1, board-data.json, is an entirely different format than in v1.0.2, which necessitates manually moving the links from the old JSON file to the new JSON file.
+
+I have a backup/restore feature planned for future releases.
+
 # Deployment
 
 Quickdash is an HTML/Javascript only application. That means there are no back-end technologies in use like NodeJS, PHP or ASP, and all you have to do to deploy it is to plop it into your favorite Web server's wwwroot folder (or equivalent).
@@ -185,7 +191,15 @@ Example:
 
 - COMPLETED: Create option to add tabs
 - Add background image option
+- Add backup/restore feature
+- Add visual QYSIWYG Json editor
 - Add trianglify as background option
+
+# Changelog
+
+- April 9 2025: Quickdash-v1.0.2-release - Added tabs feature.
+- March 27 2025: Quickdash-v1.0.1-release - fixed search feature bug that prevented icons from showing up in the search bar autocomplete.
+- Match 26 2025: Quickdash-1.0.0-release - All planned features for initial release.
 
 # The entire quickdash JSON configuration file
 
