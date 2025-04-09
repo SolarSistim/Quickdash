@@ -1,9 +1,9 @@
 <!-- Search Bar -->
-<div class="container my-4" *ngIf="enableSearch">
+<div class="container mb-0" *ngIf="enableSearch">
   <app-search></app-search>
 </div>
 
-<div class="container my-4">
+<div class="container mt-2">
   <!-- Multiple Tabs: Use Angular Material Tab Group -->
   <mat-tab-group *ngIf="tabs.length > 1">
     <mat-tab *ngFor="let tab of tabs" [label]="tab.name">
@@ -70,3 +70,5 @@
     </div>
   </ng-container>
 </div>
+
+<div class="spacer">&nbsp;</div>

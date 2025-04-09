@@ -17,12 +17,16 @@ interface QuickdashSettings {
 })
 export class QuickdashComponent implements OnInit {
 
+  showLogo: boolean = true;
 
-
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
-
+    this.http.get<any>('assets/board-data.json').subscribe(data => {
+      const settings = data['quickdash-settings']?.[0]?.other;
+      this.showLogo = settings?.showLogo ?? true;
+      console.log(this.showLogo)
+    });
   }
 
 }

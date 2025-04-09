@@ -79,3 +79,7 @@
   ::ng-deep .mat-mdc-tab-header-pagination {
     background-color: #303F48;
   }
+
+  .spacer {
+    height: 50px !important;
+  }
