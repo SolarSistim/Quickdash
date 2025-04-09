@@ -37,7 +37,7 @@ EDIT: Added about another 50 icons on 04-09-2025. Updated icons folder screensho
 
 **There are no icon libraries loaded in this project.** The "icons" are just 120x120 PNG images @ 300 DPI. 
 
-Why do this? - Because no matter HOW MANY icons libraries I load into this thing, there will ALWAYS be something missing.
+Why do this? - Because no matter HOW MANY icon libraries I load into this thing, there will ALWAYS be something missing.
 
 Instead of going to all the effort and code necessary to select icons from an icon library - at least in my case - it's easier to google for a matching image, pop open Photoshop, paste and save the "icon" at the necessary dimensions.
 
