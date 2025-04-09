@@ -179,11 +179,11 @@ Example:
 
 # Download
 
-- https://github.com/SolarSistim/Quickdash/releases/tag/v1.0.1-release
+- https://github.com/SolarSistim/Quickdash/releases
 
 # Roadmap
 
-- Create option to add tabs
+- COMPLETED: Create option to add tabs
 - Add background image option
 - Add trianglify as background option
 
