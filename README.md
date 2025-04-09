@@ -199,7 +199,7 @@ Example:
 
 # Changelog
 
-- April 9 2025: Quickdash-v1.0.2-release - Added tabs feature.
+- April 9 2025: Quickdash-v1.0.2-release - Added tabs feature. If only 1 tab exists, the tab bar is hidden.
 - March 27 2025: Quickdash-v1.0.1-release - fixed search feature bug that prevented icons from showing up in the search bar autocomplete.
 - Match 26 2025: Quickdash-1.0.0-release - All planned features for initial release.
 
