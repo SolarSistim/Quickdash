@@ -20,11 +20,11 @@ I'm also using this project as a springboard to learn how to create Docker conta
 # Features
 
 - NEW Added 04-09-2025: Added Tabs in order to futher organize your links.
-- Mobile friendly interface.
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
 - JSON powered links list (YAML detractors eat your heart out)
 - PNG icons (No icon library is loaded)
 - Front-end app only: No back-end server required; just pop it onto your favorite webserver.
+- Mobile friendly interface.
 
 # Technologies used
 
