@@ -171,7 +171,7 @@ Quickdash will iterate over the "categories" portion of board-data.json and disp
 
 ## Upgrading from Quickdash-v1.0.1-release to Quickdash-v1.0.2-release
 
-There are no progammatic backup/restore features as of yet. The JSON config file in v1.0.1, board-data.json, is an entirely different format than in v1.0.2, which necessitates manually moving the links from the old JSON file to the new JSON file.
+There are no programmatic backup/restore features as of yet. The JSON config file in v1.0.1, board-data.json, is an entirely different format than in v1.0.2, which necessitates manually moving the links from the old JSON file to the new JSON file.
 
 I have a backup/restore feature planned for future releases.
 
@@ -184,6 +184,18 @@ Example:
 - **Nginx**: /var/www/html/Quickdash\
 - **IIS**: \wwwroot\Quickdash\
 - **Apache**: /var/www/html/Quickdash/
+
+#### Docker Option
+```bash
+git clone https://github.com/SolarSistim/Quickdash.git
+
+cd Quickdash
+
+docker compose up -d
+```
+Recommended to edit the docker compose file to bind mount the `assets` directory. This will allow you to edit the json file and add additional icons without having to rebuild the container. You'll probably need to do a hard refresh to see the changes.
+
+Also, adjust the port mapping as needed.
 
 # Download
 
