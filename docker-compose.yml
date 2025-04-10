@@ -1,0 +1,13 @@
+name: quickdash
+services:
+  quickdash:
+    container_name: quickdash
+    build: .
+    image: quickdash
+    ports:
+      - "6556:80"
+    # Optional to bind icons and json file to host for editing without
+    #   having to rebuild the container
+    #volumes:
+    #   - /path/to/assets:/usr/share/nginx/html/assets
+    restart: unless-stopped
