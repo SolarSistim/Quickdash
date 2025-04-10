@@ -20,6 +20,7 @@ I'm also using this project as a springboard to learn how to create Docker conta
 
 # Features
 
+- NEW Added 04-10-2025 Docker container & compose files. (Thanks to JSouthGB!)
 - NEW Added 04-09-2025: Added Tabs in order to futher organize your links.
 - Global search feature allows searching Google, or other specified search engine, and filters the links you've configured.
 - JSON powered links list (YAML detractors eat your heart out)
